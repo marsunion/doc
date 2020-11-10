@@ -107,6 +107,12 @@ sudo apt update && sudo apt upgrade -y
 	
 + 添加libpng12-0存储库，wkhtmltopdf将使用此依赖
 
+先执行这一行安装software-properties-common和python-software-properties
+sudo apt-get install software-properties-common python-software-properties
+ 
+
+然后在执行add-apt-repository 命令即可
+
 ```bash
 sudo add-apt-repository universe
 sudo add-apt-repository "deb http://mirrors.aliyun.com/ubuntu/ xenial main"
